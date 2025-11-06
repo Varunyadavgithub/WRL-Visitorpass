@@ -269,8 +269,6 @@ const VisitorPass = () => {
       setLoading(false);
     }
   };
-  console.log("Submitting data:", visitorData);
-
 
   const handleFetchPreviousData = async () => {
     if (!visitorData.contactNo) {
