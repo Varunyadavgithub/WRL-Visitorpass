@@ -1,26 +1,26 @@
 import express from "express";
+import { getDashboardStats } from "../controllers/dashboard.controller.js";
 import {
   fetchDepartments,
-  getEmployee,
-  generateVisitorPass,
   fetchPreviousPass,
+  generateVisitorPass,
+  getEmployee,
   getVisitorPassDetails,
-} from "../controllers/visitor/visitorPass.js";
-import {
-  visitorIn,
-  visitorOut,
-  getVisitorLogs,
-} from "../controllers/visitor/visitorInOut.js";
-import {
-  fetchVisitors,
-  sendVisitorReport,
-} from "../controllers/visitor/reports.js";
-import { visitors } from "../controllers/visitor/visitors.js";
-import { getDashboardStats } from "../controllers/visitor/dashboard.js";
+} from "../controllers/generatepass.controller.js";
 import {
   getAllVisitors,
   getVisitorDetails,
-} from "../controllers/visitor/visitorHistoryController.js";
+} from "../controllers/history.controller.js";
+import {
+  getVisitorLogs,
+  visitorIn,
+  visitorOut,
+} from "../controllers/inOut.controller.js";
+import {
+  fetchVisitors,
+  sendVisitorReport,
+} from "../controllers/reports.controller.js";
+import { visitors } from "../controllers/visitors.controller.js";
 
 const router = express.Router();
 
