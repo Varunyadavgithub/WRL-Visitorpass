@@ -36,6 +36,7 @@ export const fetchVisitors = async (req, res) => {
         d.department_name,
         u.name As employee_name,
         vp.purpose_of_visit,
+        vp.token,
         vl.check_in_time,
         vl.check_out_time
       FROM visitors v
