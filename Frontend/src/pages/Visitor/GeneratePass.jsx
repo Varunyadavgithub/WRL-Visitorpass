@@ -33,7 +33,7 @@ const GeneratePass = () => {
     departmentTo: "",
     employeeTo: "",
     visitType: "",
-    remark: "",
+    token: "",
     specialInstruction: "",
     purposeOfVisit: "",
     createdBy: user?.id,
@@ -667,9 +667,9 @@ const GeneratePass = () => {
                   <InputField
                     label="Token No."
                     type="text"
-                    name="remark"
+                    name="token"
                     placeholder="Enter token no."
-                    value={visitorData.remark}
+                    value={visitorData.token}
                     onChange={handleInputChange}
                     className="w-full"
                   />
